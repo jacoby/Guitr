@@ -1,0 +1,202 @@
+{
+  "notes": {
+    "0": "C",
+    "1": "C#",
+    "2": "D",
+    "3": "D#",
+    "4": "E",
+    "5": "F",
+    "6": "F#",
+    "7": "G",
+    "8": "G#",
+    "9": "A",
+    "a": "A#",
+    "b": "B"
+  },
+  "scales": [{
+      "notes": [0, 2, 4, 5, 7, 9, 11],
+      "name": "Major"
+    },
+    {
+      "notes": [0, 2, 3, 5, 7, 8, 10],
+      "name": "Minor"
+    },
+    {
+      "notes": [0, 2, 3, 5, 7, 8, 11],
+      "name": "Harmonic Minor"
+    },
+    {
+      "notes": [0, 2, 4, 7, 9],
+      "name": "Pentatonic Major"
+    },
+    {
+      "notes": [0, 3, 5, 7, 10],
+      "name": "Pentatonic Minor"
+    },
+    {
+      "notes": [0, 3, 5, 6, 7, 10],
+      "name": "Blues (Pentatonic minor)"
+    },
+    {
+      "notes": [0, 2, 4, 5, 7, 9, 10, 11],
+      "name": "Bebop Scale"
+    },
+    {
+      "notes": [0, 2, 3, 7, 8],
+      "name": "Traditional Japanese"
+    },
+    {
+      "notes": [0, 2, 3, 6, 7, 8, 11, ],
+      "name": "Hungarian Minor"
+    },
+    {
+      "notes": [0, 2, 3, 5, 6, 8, 9, 11],
+      "name": "Arabian"
+    },
+    {
+      "notes": [0, 2, 4, 6, 8, 10],
+      "name": "Whole Tone"
+    },
+    {
+      "notes": [0, 2, 4, 6, 7, 9, 11],
+      "name": "Lydian Mode"
+    },
+    {
+      "notes": [0, 2, 4, 5, 7, 9, 11],
+      "name": "Ionian Mode"
+    },
+    {
+      "notes": [0, 2, 4, 5, 7, 9, 10],
+      "name": "Mixolydian Mode"
+    },
+    {
+      "notes": [0, 2, 3, 5, 7, 9, 10],
+      "name": "Dorian Mode"
+    },
+    {
+      "notes": [0, 2, 3, 5, 7, 8, 10],
+      "name": "Aeolian Mode"
+    },
+    {
+      "notes": [0, 1, 3, 5, 7, 8, 10],
+      "name": "Phrygian Mode"
+    },
+    {
+      "notes": [0, 1, 3, 5, 6, 8, 10],
+      "name": "Locrian Mode"
+    },
+    {
+      "notes": [0, 2, 4, 6, 7, 9, 10],
+      "name": "Lydian b7"
+    },
+    {
+      "notes": [0, 1, 3, 4, 6, 8, 10],
+      "name": "Altered"
+    },
+    {
+      "notes": [0, 1, 3, 4, 6, 7, 9, 10],
+      "name": "Symmetrical Diminished"
+    },
+    {
+      "notes": [0, 3, 5, 7, 9],
+      "name": "B.B. Box"
+    },
+    {
+      "notes": [0, 2, 3, 5, 7, 8, 11],
+      "name": "Harmonic Minor"
+    },
+    {
+      "notes": [0, 1, 5, 7, 8],
+      "name": "Japanese"
+    },
+    {
+      "notes": [0, 2, 4, 7, 9],
+      "name": "Chinese"
+    },
+    {
+      "notes": [0, 1, 4, 5, 7, 8, 10],
+      "name": "Phyrygian Dominant"
+    },
+    {
+      "notes": [0, 1, 4, 5, 7, 8, 11],
+      "name": "Gypsy"
+    },
+    {
+      "notes": [0, 1, 4, 5, 6, 8, 11],
+      "name": "Persian"
+    }
+  ],
+  "tunings": [{
+      "notes": "4927b4",
+      "name": "Standard"
+    },
+    {
+      "notes": "3816a3",
+      "name": "Standard (Hendrix-tuned)"
+    },
+    {
+      "notes": "270592",
+      "name": "Standard (detuned to D)"
+    },
+    {
+      "notes": "047904",
+      "name": "C6/A7 (lap steel)"
+    },
+    {
+      "notes": "2927b4",
+      "name": "Drop D"
+    },
+    {
+      "notes": "292792",
+      "name": "DADGAD"
+    },
+    {
+      "notes": "292692",
+      "name": "Sebastapol (open D)"
+    },
+    {
+      "notes": "4b48b4",
+      "name": "Sebastapol (open E)"
+    },
+    {
+      "notes": "2727b2",
+      "name": "Spanish (open G)"
+    },
+    {
+      "notes": "494914",
+      "name": "Spanish (open A)"
+    },
+    {
+      "notes": "7b27b2",
+      "name": "Dobro (open G)"
+    },
+    {
+      "notes": "914914",
+      "name": "Dobro (open A)"
+    },
+    {
+      "notes": "072947",
+      "name": "New Standard Tuning"
+    },
+    {
+      "notes": "072702",
+      "name": "Orkney Tuning"
+    },
+    {
+      "notes": "b4926b",
+      "name": "Baritone (B)"
+    },
+    {
+      "notes": "16b481",
+      "name": "Baritone (C#)"
+    },
+    {
+      "notes": "070704",
+      "name": "Lap Steel Open-C (CGCGCE)"
+    },
+    {
+      "notes": "292292",
+      "name": "Lap Steel Open-D (DADDAD)"
+    }
+  ]
+}
