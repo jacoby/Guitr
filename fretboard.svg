@@ -1,0 +1,407 @@
+    <svg viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg" id="neck">
+      <rect
+        id="fretboard"
+        x="0"
+        y="0"
+        width="900"
+        height="150"
+        fill="rgb(240,240,100)"
+      ></rect>
+      <rect
+        id="nut"
+        x="0"
+        y="0"
+        width="10"
+        height="150"
+        fill="rgb(255,255,190)"
+      ></rect>
+      <line
+        id="fret1"
+        x1="87"
+        x2="87"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret2"
+        x1="158"
+        x2="158"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret3"
+        x1="226"
+        x2="226"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret4"
+        x1="289"
+        x2="289"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret5"
+        x1="348"
+        x2="348"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret6"
+        x1="403"
+        x2="403"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret7"
+        x1="454"
+        x2="454"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret8"
+        x1="502"
+        x2="502"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret9"
+        x1="547"
+        x2="547"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret10"
+        x1="589"
+        x2="589"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret11"
+        x1="629"
+        x2="629"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret12"
+        x1="665"
+        x2="665"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret13"
+        x1="700"
+        x2="700"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret14"
+        x1="732"
+        x2="732"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret15"
+        x1="762"
+        x2="762"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret16"
+        x1="790"
+        x2="790"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret17"
+        x1="816"
+        x2="816"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret18"
+        x1="841"
+        x2="841"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret19"
+        x1="864"
+        x2="864"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret20"
+        x1="885"
+        x2="885"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret21"
+        x1="905"
+        x2="905"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="fret22"
+        x1="924"
+        x2="924"
+        y1="0"
+        y2="150"
+        stroke-width="2"
+        stroke="rgb(150,150,150)"
+      />
+      <circle id="fret_3" cx="192" cy="75" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_5" cx="318" cy="75" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_7" cx="428" cy="75" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_9" cx="525" cy="75" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_12" cx="647" cy="35" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_12" cx="647" cy="115" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_15" cx="747" cy="75" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_17" cx="803" cy="75" r="5" fill="rgb(040,040,040)" />
+      <circle id="fret_19" cx="852" cy="75" r="5" fill="rgb(040,040,040)" />
+      <line
+        id="string1"
+        x1="0"
+        x2="900"
+        y1="008"
+        y2="008"
+        stroke-width="0.5"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="string2"
+        x1="0"
+        x2="900"
+        y1="035"
+        y2="035"
+        stroke-width="0.7"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="string3"
+        x1="0"
+        x2="900"
+        y1="062"
+        y2="062"
+        stroke-width="0.9"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="string4"
+        x1="0"
+        x2="900"
+        y1="089"
+        y2="089"
+        stroke-width="1.1"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="string5"
+        x1="0"
+        x2="900"
+        y1="116"
+        y2="116"
+        stroke-width="1.3"
+        stroke="rgb(150,150,150)"
+      />
+      <line
+        id="string6"
+        x1="0"
+        x2="900"
+        y1="143"
+        y2="143"
+        stroke-width="1.5"
+        stroke="rgb(150,150,150)"
+      />
+
+        <circle id="string0fret0" class="string0 fret0" cx="10" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret1" class="string0 fret1" cx="87" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret2" class="string0 fret2" cx="158" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret3" class="string0 fret3" cx="226" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret4" class="string0 fret4" cx="289" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret5" class="string0 fret5" cx="348" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret6" class="string0 fret6" cx="403" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret7" class="string0 fret7" cx="454" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret8" class="string0 fret8" cx="502" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret9" class="string0 fret9" cx="547" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret10" class="string0 fret10" cx="589" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret11" class="string0 fret11" cx="629" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret12" class="string0 fret12" cx="665" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret13" class="string0 fret13" cx="700" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret14" class="string0 fret14" cx="732" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret15" class="string0 fret15" cx="762" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret16" class="string0 fret16" cx="790" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret17" class="string0 fret17" cx="816" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret18" class="string0 fret18" cx="841" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret19" class="string0 fret19" cx="864" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string0fret20" class="string0 fret20" cx="885" cy="008" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret0" class="string1 fret0" cx="10" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret1" class="string1 fret1" cx="87" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret2" class="string1 fret2" cx="158" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret3" class="string1 fret3" cx="226" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret4" class="string1 fret4" cx="289" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret5" class="string1 fret5" cx="348" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret6" class="string1 fret6" cx="403" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret7" class="string1 fret7" cx="454" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret8" class="string1 fret8" cx="502" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret9" class="string1 fret9" cx="547" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret10" class="string1 fret10" cx="589" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret11" class="string1 fret11" cx="629" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret12" class="string1 fret12" cx="665" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret13" class="string1 fret13" cx="700" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret14" class="string1 fret14" cx="732" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret15" class="string1 fret15" cx="762" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret16" class="string1 fret16" cx="790" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret17" class="string1 fret17" cx="816" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret18" class="string1 fret18" cx="841" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret19" class="string1 fret19" cx="864" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string1fret20" class="string1 fret20" cx="885" cy="035" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret0" class="string2 fret0" cx="10" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret1" class="string2 fret1" cx="87" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret2" class="string2 fret2" cx="158" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret3" class="string2 fret3" cx="226" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret4" class="string2 fret4" cx="289" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret5" class="string2 fret5" cx="348" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret6" class="string2 fret6" cx="403" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret7" class="string2 fret7" cx="454" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret8" class="string2 fret8" cx="502" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret9" class="string2 fret9" cx="547" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret10" class="string2 fret10" cx="589" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret11" class="string2 fret11" cx="629" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret12" class="string2 fret12" cx="665" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret13" class="string2 fret13" cx="700" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret14" class="string2 fret14" cx="732" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret15" class="string2 fret15" cx="762" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret16" class="string2 fret16" cx="790" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret17" class="string2 fret17" cx="816" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret18" class="string2 fret18" cx="841" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret19" class="string2 fret19" cx="864" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string2fret20" class="string2 fret20" cx="885" cy="062" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret0" class="string3 fret0" cx="10" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret1" class="string3 fret1" cx="87" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret2" class="string3 fret2" cx="158" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret3" class="string3 fret3" cx="226" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret4" class="string3 fret4" cx="289" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret5" class="string3 fret5" cx="348" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret6" class="string3 fret6" cx="403" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret7" class="string3 fret7" cx="454" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret8" class="string3 fret8" cx="502" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret9" class="string3 fret9" cx="547" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret10" class="string3 fret10" cx="589" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret11" class="string3 fret11" cx="629" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret12" class="string3 fret12" cx="665" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret13" class="string3 fret13" cx="700" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret14" class="string3 fret14" cx="732" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret15" class="string3 fret15" cx="762" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret16" class="string3 fret16" cx="790" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret17" class="string3 fret17" cx="816" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret18" class="string3 fret18" cx="841" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret19" class="string3 fret19" cx="864" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string3fret20" class="string3 fret20" cx="885" cy="089" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret0" class="string4 fret0" cx="10" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret1" class="string4 fret1" cx="87" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret2" class="string4 fret2" cx="158" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret3" class="string4 fret3" cx="226" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret4" class="string4 fret4" cx="289" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret5" class="string4 fret5" cx="348" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret6" class="string4 fret6" cx="403" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret7" class="string4 fret7" cx="454" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret8" class="string4 fret8" cx="502" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret9" class="string4 fret9" cx="547" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret10" class="string4 fret10" cx="589" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret11" class="string4 fret11" cx="629" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret12" class="string4 fret12" cx="665" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret13" class="string4 fret13" cx="700" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret14" class="string4 fret14" cx="732" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret15" class="string4 fret15" cx="762" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret16" class="string4 fret16" cx="790" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret17" class="string4 fret17" cx="816" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret18" class="string4 fret18" cx="841" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret19" class="string4 fret19" cx="864" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string4fret20" class="string4 fret20" cx="885" cy="116" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret0" class="string5 fret0" cx="10" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret1" class="string5 fret1" cx="87" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret2" class="string5 fret2" cx="158" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret3" class="string5 fret3" cx="226" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret4" class="string5 fret4" cx="289" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret5" class="string5 fret5" cx="348" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret6" class="string5 fret6" cx="403" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret7" class="string5 fret7" cx="454" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret8" class="string5 fret8" cx="502" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret9" class="string5 fret9" cx="547" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret10" class="string5 fret10" cx="589" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret11" class="string5 fret11" cx="629" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret12" class="string5 fret12" cx="665" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret13" class="string5 fret13" cx="700" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret14" class="string5 fret14" cx="732" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret15" class="string5 fret15" cx="762" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret16" class="string5 fret16" cx="790" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret17" class="string5 fret17" cx="816" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret18" class="string5 fret18" cx="841" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret19" class="string5 fret19" cx="864" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+        <circle id="string5fret20" class="string5 fret20" cx="885" cy="143" r="5" stroke-width="1" stroke="rgb(0,0,0)" fill="#ffffff" />
+      </svg>
+  
