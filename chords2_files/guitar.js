@@ -4,40 +4,37 @@
 function draw() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
-  var aFret = new Array;
-  var aString = new Array;
+  var aFret = new Array();
+  var aString = new Array();
   ctx.clearRect(0, 0, 900, 120);
   var root;
-  var tab = '\t';
-  var nl = '\n';
-  var sp = ' ';
+  var tab = "\t";
+  var nl = "\n";
+  var sp = " ";
 
-  var show = document.getElementById('show');
+  var show = document.getElementById("show");
   var sdiv = document.getElementById("scalediv");
   var idiv = document.getElementById("intdiv");
   var cdiv = document.getElementById("chorddiv");
 
-  sdiv.style.display = 'none';
-  idiv.style.display = 'none';
-  cdiv.style.display = 'none';
-  if (show.value == 'scale') sdiv.style.display = 'block';
-  if (show.value == 'interval') idiv.style.display = 'block';
-  if (show.value == 'chord') cdiv.style.display = 'block';
+  sdiv.style.display = "none";
+  idiv.style.display = "none";
+  cdiv.style.display = "none";
+  if (show.value == "scale") sdiv.style.display = "block";
+  if (show.value == "interval") idiv.style.display = "block";
+  if (show.value == "chord") cdiv.style.display = "block";
 
-  console.log(show.value)
-  console.log("interval  " + intdiv.style.display)
-  console.log("chord     " + chorddiv.style.display)
-  console.log("scale     " + scalediv.style.display)
-  console.log("")
+  console.log(show.value);
+  console.log("interval  " + intdiv.style.display);
+  console.log("chord     " + chorddiv.style.display);
+  console.log("scale     " + scalediv.style.display);
+  console.log("");
 
   draw_neck(ctx, aFret, aString);
   info();
   draw_dots(ctx, aFret, aString);
 }
 // ---------------------------------------------------------
-
-
-
 
 // ---------------------------------------------------------
 //
@@ -61,43 +58,40 @@ function myColors() {
 }
 // ---------------------------------------------------------
 
-
-
-
 // ---------------------------------------------------------
 //
 // ---------------------------------------------------------
 function draw_dots(ctx, aFret, aString) {
   ctx.strokeStyle = "rgba(255,000,000,0.9)";
   ctx.fillStyle = "rgba(255,100,100,0.6)";
-  var scratch = '';
-  var key = document.getElementById('key');
-  var chord = document.getElementById('chord');
-  var scale = document.getElementById('scale');
-  var tuning = document.getElementById('tuning');
-  var show = document.getElementById('show');
-  var note = document.getElementById('notes');
+  var scratch = "";
+  var key = document.getElementById("key");
+  var chord = document.getElementById("chord");
+  var scale = document.getElementById("scale");
+  var tuning = document.getElementById("tuning");
+  var show = document.getElementById("show");
+  var note = document.getElementById("notes");
 
-  var skip_1 = document.getElementById('skip_1');
-  var skip_2 = document.getElementById('skip_2');
-  var skip_3 = document.getElementById('skip_3');
-  var skip_4 = document.getElementById('skip_4');
-  var skip_5 = document.getElementById('skip_5');
-  var skip_6 = document.getElementById('skip_6');
+  var skip_1 = document.getElementById("skip_1");
+  var skip_2 = document.getElementById("skip_2");
+  var skip_3 = document.getElementById("skip_3");
+  var skip_4 = document.getElementById("skip_4");
+  var skip_5 = document.getElementById("skip_5");
+  var skip_6 = document.getElementById("skip_6");
   var interval = [];
 
-  var i00 = document.getElementById('interval_0');
-  var i01 = document.getElementById('interval_1');
-  var i02 = document.getElementById('interval_2');
-  var i03 = document.getElementById('interval_3');
-  var i04 = document.getElementById('interval_4');
-  var i05 = document.getElementById('interval_5');
-  var i06 = document.getElementById('interval_6');
-  var i07 = document.getElementById('interval_7');
-  var i08 = document.getElementById('interval_8');
-  var i09 = document.getElementById('interval_9');
-  var i10 = document.getElementById('interval_10');
-  var i11 = document.getElementById('interval_11');
+  var i00 = document.getElementById("interval_0");
+  var i01 = document.getElementById("interval_1");
+  var i02 = document.getElementById("interval_2");
+  var i03 = document.getElementById("interval_3");
+  var i04 = document.getElementById("interval_4");
+  var i05 = document.getElementById("interval_5");
+  var i06 = document.getElementById("interval_6");
+  var i07 = document.getElementById("interval_7");
+  var i08 = document.getElementById("interval_8");
+  var i09 = document.getElementById("interval_9");
+  var i10 = document.getElementById("interval_10");
+  var i11 = document.getElementById("interval_11");
 
   if (i00.checked == true) {
     interval.push(parseInt(0));
@@ -137,8 +131,8 @@ function draw_dots(ctx, aFret, aString) {
   }
 
   // FRET SKIPPING
-  var high = document.getElementById('high_limit');
-  var low = document.getElementById('low_limit');
+  var high = document.getElementById("high_limit");
+  var low = document.getElementById("low_limit");
   // FRET SKIPPING
 
   var stringSkip = [];
@@ -149,7 +143,7 @@ function draw_dots(ctx, aFret, aString) {
   stringSkip.push(skip_2.checked);
   stringSkip.push(skip_1.checked);
 
-  var atuning = tuning.value.split('');
+  var atuning = tuning.value.split("");
   var aNeck = new Array(6);
   aNeck[0] = new Array(25);
   aNeck[1] = new Array(25);
@@ -161,75 +155,75 @@ function draw_dots(ctx, aFret, aString) {
   var achord = [];
   var dchord = [];
   if (show.value == "chord") {
-    achord = chord.value.split(' ');
+    achord = chord.value.split(" ");
   } else if (show.value == "scale") {
-    achord = scale.value.split(' ');
+    achord = scale.value.split(" ");
   } else if (show.value == "interval") {
     achord = interval;
   }
-  var achord2 = new Array;
+  var achord2 = new Array();
 
   // s for "string"
   for (var s = 0; s < 6; s++) {
     aNeck[s][0] = atuning[s];
-    // f = fret 
+    // f = fret
     for (f = 1; f <= 25; f++) {
-      if (aNeck[s][f - 1] == '0') {
-        aNeck[s][f] = '1';
-      } else if (aNeck[s][f - 1] == '1') {
-        aNeck[s][f] = '2';
-      } else if (aNeck[s][f - 1] == '2') {
-        aNeck[s][f] = '3';
-      } else if (aNeck[s][f - 1] == '3') {
-        aNeck[s][f] = '4';
-      } else if (aNeck[s][f - 1] == '4') {
-        aNeck[s][f] = '5';
-      } else if (aNeck[s][f - 1] == '5') {
-        aNeck[s][f] = '6';
-      } else if (aNeck[s][f - 1] == '6') {
-        aNeck[s][f] = '7';
-      } else if (aNeck[s][f - 1] == '7') {
-        aNeck[s][f] = '8';
-      } else if (aNeck[s][f - 1] == '8') {
-        aNeck[s][f] = '9';
-      } else if (aNeck[s][f - 1] == '9') {
-        aNeck[s][f] = 'a';
-      } else if (aNeck[s][f - 1] == 'a') {
-        aNeck[s][f] = 'b';
-      } else if (aNeck[s][f - 1] == 'b') {
-        aNeck[s][f] = '0';
+      if (aNeck[s][f - 1] == "0") {
+        aNeck[s][f] = "1";
+      } else if (aNeck[s][f - 1] == "1") {
+        aNeck[s][f] = "2";
+      } else if (aNeck[s][f - 1] == "2") {
+        aNeck[s][f] = "3";
+      } else if (aNeck[s][f - 1] == "3") {
+        aNeck[s][f] = "4";
+      } else if (aNeck[s][f - 1] == "4") {
+        aNeck[s][f] = "5";
+      } else if (aNeck[s][f - 1] == "5") {
+        aNeck[s][f] = "6";
+      } else if (aNeck[s][f - 1] == "6") {
+        aNeck[s][f] = "7";
+      } else if (aNeck[s][f - 1] == "7") {
+        aNeck[s][f] = "8";
+      } else if (aNeck[s][f - 1] == "8") {
+        aNeck[s][f] = "9";
+      } else if (aNeck[s][f - 1] == "9") {
+        aNeck[s][f] = "a";
+      } else if (aNeck[s][f - 1] == "a") {
+        aNeck[s][f] = "b";
+      } else if (aNeck[s][f - 1] == "b") {
+        aNeck[s][f] = "0";
       }
     }
   }
   // We show the neck kinda upside down
   aNeck.reverse();
 
-  // mark the neck 
-  var trans = new Array;
-  trans.push('0');
-  trans.push('1');
-  trans.push('2');
-  trans.push('3');
-  trans.push('4');
-  trans.push('5');
-  trans.push('6');
-  trans.push('7');
-  trans.push('8');
-  trans.push('9');
-  trans.push('a');
-  trans.push('b');
-  trans.push('0');
-  trans.push('1');
-  trans.push('2');
-  trans.push('3');
-  trans.push('4');
-  trans.push('5');
-  trans.push('6');
-  trans.push('7');
-  trans.push('8');
-  trans.push('9');
-  trans.push('a');
-  trans.push('b');
+  // mark the neck
+  var trans = new Array();
+  trans.push("0");
+  trans.push("1");
+  trans.push("2");
+  trans.push("3");
+  trans.push("4");
+  trans.push("5");
+  trans.push("6");
+  trans.push("7");
+  trans.push("8");
+  trans.push("9");
+  trans.push("a");
+  trans.push("b");
+  trans.push("0");
+  trans.push("1");
+  trans.push("2");
+  trans.push("3");
+  trans.push("4");
+  trans.push("5");
+  trans.push("6");
+  trans.push("7");
+  trans.push("8");
+  trans.push("9");
+  trans.push("a");
+  trans.push("b");
 
   // find the root note
   for (i = 0; i < 12; i++) {
@@ -241,10 +235,10 @@ function draw_dots(ctx, aFret, aString) {
     newpos = parseFloat(root) + parseFloat(achord[i]);
     newpos = newpos % 12;
     if (newpos == 10) {
-      newpos = 'a'
+      newpos = "a";
     }
     if (newpos == 11) {
-      newpos = 'b'
+      newpos = "b";
     }
     achord2.push(newpos);
   }
@@ -254,17 +248,17 @@ function draw_dots(ctx, aFret, aString) {
 
   ctx.strokeStyle = "rgb(000,000,000)";
   for (s = 0; s < 6; s++) {
-    scratch += '#\t' + s + '\t';
+    scratch += "#\t" + s + "\t";
     scratch += stringSkip[s];
-    scratch += '\n';
+    scratch += "\n";
     if (stringSkip[s] == false) {
       for (f = 0; f <= 25; f++) {
         var flag = 0;
         if (f <= low.value) {
-          flag++
+          flag++;
         }
         if (f > high.value) {
-          flag++
+          flag++;
         }
         if (!flag) {
           for (n = 0; n <= achord2.length; n++) {
@@ -287,31 +281,28 @@ function draw_dots(ctx, aFret, aString) {
 }
 // ---------------------------------------------------------
 
-
-
-
 // ---------------------------------------------------------
 //
 // ---------------------------------------------------------
 function info() {
-  var key = document.getElementById('key');
-  var show = document.getElementById('show');
-  var chord = document.getElementById('chord');
-  var scale = document.getElementById('scale');
+  var key = document.getElementById("key");
+  var show = document.getElementById("show");
+  var chord = document.getElementById("chord");
+  var scale = document.getElementById("scale");
   var interval = [];
 
-  var i00 = document.getElementById('interval_0');
-  var i01 = document.getElementById('interval_1');
-  var i02 = document.getElementById('interval_2');
-  var i03 = document.getElementById('interval_3');
-  var i04 = document.getElementById('interval_4');
-  var i05 = document.getElementById('interval_5');
-  var i06 = document.getElementById('interval_6');
-  var i07 = document.getElementById('interval_7');
-  var i08 = document.getElementById('interval_8');
-  var i09 = document.getElementById('interval_9');
-  var i10 = document.getElementById('interval_10');
-  var i11 = document.getElementById('interval_11');
+  var i00 = document.getElementById("interval_0");
+  var i01 = document.getElementById("interval_1");
+  var i02 = document.getElementById("interval_2");
+  var i03 = document.getElementById("interval_3");
+  var i04 = document.getElementById("interval_4");
+  var i05 = document.getElementById("interval_5");
+  var i06 = document.getElementById("interval_6");
+  var i07 = document.getElementById("interval_7");
+  var i08 = document.getElementById("interval_8");
+  var i09 = document.getElementById("interval_9");
+  var i10 = document.getElementById("interval_10");
+  var i11 = document.getElementById("interval_11");
 
   if (i00.checked == true) {
     interval.push(parseInt(0));
@@ -350,86 +341,86 @@ function info() {
     interval.push(parseInt(11));
   }
 
-  var noteTable = document.getElementById('noteTable');
-  noteTable.innerHTML = '';
-  noteTable.appendChild(document.createElement('tbody'));
+  var noteTable = document.getElementById("noteTable");
+  noteTable.innerHTML = "";
+  noteTable.appendChild(document.createElement("tbody"));
   if (noteTable.tBodies[0].rows.length > 1) {
     noteTable.tBodies[0].deleteRow(1);
   }
-  noteTable.tBodies[0].appendChild(document.createElement('tr'));
+  noteTable.tBodies[0].appendChild(document.createElement("tr"));
 
   var achord = [];
   var bchord = [];
   var cchord = [];
   var dchord = [];
   var chromatic = [];
-  var flag = '';
+  var flag = "";
 
-  chromatic.push('C');
-  chromatic.push('C#');
-  chromatic.push('D');
-  chromatic.push('D#');
-  chromatic.push('E');
-  chromatic.push('F');
-  chromatic.push('F#');
-  chromatic.push('G');
-  chromatic.push('G#');
-  chromatic.push('A');
-  chromatic.push('A#');
-  chromatic.push('B');
-  chromatic.push('C');
-  chromatic.push('C#');
-  chromatic.push('D');
-  chromatic.push('D#');
-  chromatic.push('E');
-  chromatic.push('F');
-  chromatic.push('F#');
-  chromatic.push('G');
-  chromatic.push('G#');
-  chromatic.push('A');
-  chromatic.push('A#');
-  chromatic.push('B');
+  chromatic.push("C");
+  chromatic.push("C#");
+  chromatic.push("D");
+  chromatic.push("D#");
+  chromatic.push("E");
+  chromatic.push("F");
+  chromatic.push("F#");
+  chromatic.push("G");
+  chromatic.push("G#");
+  chromatic.push("A");
+  chromatic.push("A#");
+  chromatic.push("B");
+  chromatic.push("C");
+  chromatic.push("C#");
+  chromatic.push("D");
+  chromatic.push("D#");
+  chromatic.push("E");
+  chromatic.push("F");
+  chromatic.push("F#");
+  chromatic.push("G");
+  chromatic.push("G#");
+  chromatic.push("A");
+  chromatic.push("A#");
+  chromatic.push("B");
 
-  chromatic.push('C');
-  chromatic.push('C#');
-  chromatic.push('D');
-  chromatic.push('D#');
-  chromatic.push('E');
-  chromatic.push('F');
-  chromatic.push('F#');
-  chromatic.push('G');
-  chromatic.push('G#');
-  chromatic.push('A');
-  chromatic.push('A#');
-  chromatic.push('B');
-  chromatic.push('C');
-  chromatic.push('C#');
-  chromatic.push('D');
-  chromatic.push('D#');
-  chromatic.push('E');
-  chromatic.push('F');
-  chromatic.push('F#');
-  chromatic.push('G');
-  chromatic.push('G#');
-  chromatic.push('A');
-  chromatic.push('A#');
-  chromatic.push('B');
+  chromatic.push("C");
+  chromatic.push("C#");
+  chromatic.push("D");
+  chromatic.push("D#");
+  chromatic.push("E");
+  chromatic.push("F");
+  chromatic.push("F#");
+  chromatic.push("G");
+  chromatic.push("G#");
+  chromatic.push("A");
+  chromatic.push("A#");
+  chromatic.push("B");
+  chromatic.push("C");
+  chromatic.push("C#");
+  chromatic.push("D");
+  chromatic.push("D#");
+  chromatic.push("E");
+  chromatic.push("F");
+  chromatic.push("F#");
+  chromatic.push("G");
+  chromatic.push("G#");
+  chromatic.push("A");
+  chromatic.push("A#");
+  chromatic.push("B");
 
   if (show.value == "chord") {
-    flag = 'chord';
-    achord = chord.value.split(' ');
+    flag = "chord";
+    achord = chord.value.split(" ");
   } else if (show.value == "scale") {
-    flag = 'scale';
-    achord = scale.value.split(' ');
+    flag = "scale";
+    achord = scale.value.split(" ");
   } else if (show.value == "interval") {
-    flag = 'interval';
+    flag = "interval";
     achord = interval;
   }
   for (var d = 0; d < achord.length; d++) {
     var trans_note = key.value;
 
-    if (trans_note == 'a') trans_note = 10;
-    if (trans_note == 'b') trans_note = 11;
+    if (trans_note == "a") trans_note = 10;
+    if (trans_note == "b") trans_note = 11;
     var adjusted_note = parseInt(achord[d]) + parseInt(trans_note);
     bchord.push(achord[d]);
     cchord.push(chromatic[adjusted_note]);
@@ -437,10 +428,10 @@ function info() {
   }
   achord = bchord;
   var num = achord.length;
-  var canvas = document.getElementById('info');
+  var canvas = document.getElementById("info");
   var ctx = canvas.getContext("2d");
-  var aFret = new Array;
-  var aString = new Array;
+  var aFret = new Array();
+  var aString = new Array();
   ctx.clearRect(0, 0, 240, 40);
   ctx.fillStyle = "rgb(240,240,100)";
   ctx.fillRect(0, 0, 240, 40);
@@ -452,33 +443,21 @@ function info() {
     ctx.fillStyle = fillStyles[i];
 
     ctx.beginPath();
-    ctx.arc(20 + (20 * i), 20, 5, 0, Math.PI * 2, true);
+    ctx.arc(20 + 20 * i, 20, 5, 0, Math.PI * 2, true);
     ctx.fill();
 
     ctx.beginPath();
-    ctx.arc(20 + (20 * i), 20, 5, 0, Math.PI * 2, true);
+    ctx.arc(20 + 20 * i, 20, 5, 0, Math.PI * 2, true);
     ctx.stroke();
 
-    var myTD = document.createElement('td');
+    var myTD = document.createElement("td");
     myTD.innerHTML = cchord[i];
     myTD.style.backgroundColor = fillStyles[dchord[i]];
-    myTD.style.border = '1px solid black';
+    myTD.style.border = "1px solid black";
     noteTable.tBodies[0].rows[0].appendChild(myTD);
   }
 }
 // ---------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ---------------------------------------------------------
 //
@@ -494,7 +473,7 @@ function draw_neck(ctx, aFret, aString) {
   //ctx.fillStyle = "rgb(000,000,000)"; // ebony?
   ctx.fillRect(10, 10, 880, 100);
 
-  //frets 
+  //frets
   ctx.fillStyle = "rgb(150,150,150)";
   xoff = 10;
   yoff = 10;
@@ -504,13 +483,13 @@ function draw_neck(ctx, aFret, aString) {
   aFret.push(10);
   for (var f = 0; f <= 23; f++) {
     total += width;
-    pos = (total) + xoff;
+    pos = total + xoff;
     aFret.push(pos);
     ctx.fillRect(pos, 10, 2, 100);
-    width = width * .925;
+    width = width * 0.925;
   }
 
-  // dot markers 
+  // dot markers
   ctx.fillStyle = "rgb(040,040,040)"; // black clay
   //  ctx.fillStyle = "rgb(220,200,200)"; // ivory
   var dots = [];
@@ -546,7 +525,7 @@ function draw_neck(ctx, aFret, aString) {
   }
 
   // strings
-  var strokes = new Array;
+  var strokes = new Array();
   strokes.push("rgb(050,050,050)");
   strokes.push("rgb(040,040,040)");
   strokes.push("rgb(030,030,030)");
@@ -554,19 +533,19 @@ function draw_neck(ctx, aFret, aString) {
   strokes.push("rgb(010,010,010)");
   strokes.push("rgb(000,000,000)");
   var lineWidths = [];
-  lineWidths.push('0.5');
-  lineWidths.push('0.6');
-  lineWidths.push('0.7');
-  lineWidths.push('0.8');
-  lineWidths.push('0.9');
-  lineWidths.push('1');
+  lineWidths.push("0.5");
+  lineWidths.push("0.6");
+  lineWidths.push("0.7");
+  lineWidths.push("0.8");
+  lineWidths.push("0.9");
+  lineWidths.push("1");
 
   for (s = 0; s < 6; s++) {
     ctx.strokeStyle = strokes[s];
     ctx.lineWidth = lineWidths[s];
     console.log([s, strokes[s], lineWidths[s]]);
     ctx.beginPath();
-    yPos = (s * 16) + 20;
+    yPos = s * 16 + 20;
     aString.push(yPos);
     ctx.moveTo(10, yPos);
     ctx.lineTo(890, yPos);
