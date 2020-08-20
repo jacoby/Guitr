@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 20px;
+}
+
+#displaydiv {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  grid-gap: 1rem;
+  /* This is the standardized property now, but has slightly less support */
+  /* gap: 1rem */
+}
+
+.grid>div {
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 3em;
+  padding: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+#neck {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  width: 90%;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+.degree {
+  color: black;
+  display: inline-block;
+  width: 2em;
+  border: 1px solid black;
+  margin: 0.4em;
+  border-radius: 0.8em;
+}
+
+.degree0 {
+  r: 6;
+  fill: #ffff00;
+  background-color: #ffff00;
+}
+
+.degree1 {
+  fill: #ffc800;
+  background-color: #ffc800;
+}
+
+.degree2 {
+  fill: #ff9600;
+  background-color: #ff9600;
+}
+
+.degree3 {
+  fill: #ff6400;
+  background-color: #ff6400;
+}
+
+.degree4 {
+  fill: #ff0000;
+  background-color: #ff0000;
+}
+
+.degree5 {
+  fill: #c8194b;
+  background-color: #c8194b;
+}
+
+.degree6 {
+  fill: #af327d;
+  background-color: #af327d;
+}
+
+.degree7 {
+  fill: #8632c8;
+  background-color: #8632c8;
+}
+
+.degree8 {
+  fill: #6432c8;
+  background-color: #6432c8;
+}
+
+.degree9 {
+  fill: #3296c8;
+  background-color: #3296c8;
+}
+
+.degree10 {
+  fill: #00ffc8;
+  background-color: #00ffc8;
+}
+
+.degree11 {
+  fill: #64ff64;
+  background-color: #64ff64;
+}

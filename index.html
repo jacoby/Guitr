@@ -16,9 +16,7 @@
         <fieldset class="data" style="height: 150px;">
             <legend>Info</legend>
             <canvas id="info" height="80" width="240" style="display: none;"></canvas>
-            <div>
-
-            </div>
+            <div > </div>
 
             <table id="noteTable">
                 <tbody>
@@ -148,6 +146,7 @@
         <fieldset class="data" id="scalediv">
             <legend>Scale/Mode</legend>
             <select id="scale" onchange="draw()" name="scale">
+                <option value="0 1 2 3 4 5 6 7 8 9 10 11">Chromatic</option>
                 <option value="0 2 4 5 7 9 11">Major</option>
                 <option value="0 2 3 5 7 8 10">Minor</option>
                 <option value="0 2 3 5 7 8 11">Harmonic Minor</option>
@@ -224,29 +223,41 @@
         <fieldset class="data" id="intdiv">
             <legend>Intervals</legend>
             <div>
-                <span class="interval"><input id="interval_0" name="interval_0" value="0" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_0" name="interval_0" value="0" onchange="draw()"
+                        type="checkbox">
                     Root </span>
-                <span class="interval"><input id="interval_1" name="interval_1" value="1" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_1" name="interval_1" value="1" onchange="draw()"
+                        type="checkbox">
                     Minor 2nd </span>
-                <span class="interval"><input id="interval_2" name="interval_2" value="2" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_2" name="interval_2" value="2" onchange="draw()"
+                        type="checkbox">
                     Major 2nd </span>
-                <span class="interval"><input id="interval_3" name="interval_3" value="3" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_3" name="interval_3" value="3" onchange="draw()"
+                        type="checkbox">
                     Minor 3rd </span>
-                <span class="interval"><input id="interval_4" name="interval_4" value="4" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_4" name="interval_4" value="4" onchange="draw()"
+                        type="checkbox">
                     Major 3rd </span>
-                <span class="interval"><input id="interval_5" name="interval_5" value="5" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_5" name="interval_5" value="5" onchange="draw()"
+                        type="checkbox">
                     Perfect 4th </span>
-                <span class="interval"><input id="interval_6" name="interval_6" value="6" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_6" name="interval_6" value="6" onchange="draw()"
+                        type="checkbox">
                     Flat 5th/Tritone </span>
-                <span class="interval"><input id="interval_7" name="interval_7" value="7" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_7" name="interval_7" value="7" onchange="draw()"
+                        type="checkbox">
                     Perfect 5th </span>
-                <span class="interval"><input id="interval_8" name="interval_8" value="8" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_8" name="interval_8" value="8" onchange="draw()"
+                        type="checkbox">
                     Minor 6th </span>
-                <span class="interval"><input id="interval_9" name="interval_9" value="9" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_9" name="interval_9" value="9" onchange="draw()"
+                        type="checkbox">
                     Major 6th </span>
-                <span class="interval"><input id="interval_10" name="interval_10" value="10" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_10" name="interval_10" value="10" onchange="draw()"
+                        type="checkbox">
                     Dominant 7 </span>
-                <span class="interval"><input id="interval_11" name="interval_11" value="11" onchange="draw()" type="checkbox">
+                <span class="interval"><input id="interval_11" name="interval_11" value="11" onchange="draw()"
+                        type="checkbox">
                     Major 7 </span>
             </div>
         </fieldset>
