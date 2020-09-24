@@ -12,7 +12,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
   grid-gap: 1rem;
@@ -22,8 +23,8 @@ body {
 
 .grid>div {
   background-color: lightgray;
-  border: 1px solid gray;
-  border-radius: 3em;
+  box-shadow: 0.1em 0.1em 1em black;
+  border-radius: 1em;
   padding: 1em;
 }
 
@@ -33,7 +34,7 @@ body {
 
 #neck {
   padding: 10px;
-  border: 1px solid #999;
+  box-shadow: 0.1em 0.1em 1em dimgray;
   border-radius: 10px;
   background-color: #f0f8ff;
   width: 90%;
@@ -42,6 +43,13 @@ body {
 fieldset {
   padding: 0;
   margin: 0;
+  border: 0;
+}
+
+.interval {
+  width: 200px;
+  text-align: left;
+  display: inline-block;
 }
 
 .degree {
@@ -112,4 +120,59 @@ fieldset {
 .degree11 {
   fill: #64ff64;
   background-color: #64ff64;
+}
+
+#string1 { stroke:grey }
+#string2 { stroke:grey }
+#string3 { stroke:grey }
+#string4 { stroke:grey }
+#string5 { stroke:grey }
+#string6 { stroke:grey }
+
+.circles {
+  r: 7;
+  stroke-width: 1;
+  stroke: black;
+}
+
+.string0 { cy: 013 }
+.string1 { cy: 038 }
+.string2 { cy: 063 }
+.string3 { cy: 090 }
+.string4 { cy: 113 }
+.string5 { cy: 138 }
+
+.fret0  { cx: 10 ;   }
+.fret1  { cx: 082 ;  }
+.fret2  { cx: 153 ;  }
+.fret3  { cx: 219 ;  }
+.fret4  { cx: 280 ;  }
+.fret5  { cx: 336 ;  }
+.fret6  { cx: 388 ;  }
+.fret7  { cx: 436 ;  }
+.fret8  { cx: 481 ;  }
+.fret9  { cx: 522 ;  }
+.fret10 { cx: 560 ;  }
+.fret11 { cx: 596 ;  }
+.fret12 { cx: 628 ;  }
+.fret13 { cx: 659 ;  }
+.fret14 { cx: 686 ;  }
+.fret15 { cx: 712 ;  }
+.fret16 { cx: 736 ;  }
+.fret17 { cx: 758 ;  }
+.fret18 { cx: 779 ;  }
+.fret19 { cx: 798 ;  }
+.fret20 { cx: 815 ;  }
+.fret21 { cx: 831 ;  }
+.fret22 { cx: 846 ;  }
+.fret23 { cx: 860 ;  }
+.fret24 { cx: 873 ;  } 
+
+.dot {
+  r: 4;
+  fill: #282828;
+}
+
+.sdiv {
+  display: block;
 }

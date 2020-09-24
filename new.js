@@ -81,6 +81,7 @@ function drawFretboard() {
   let e_key = document.getElementById("key");
   let key = e_key.options[e_key.selectedIndex].value;
   let keyname = e_key.options[e_key.selectedIndex].innerHTML;
+  let keynum = code2num[key];
 
   let e_tuning = document.getElementById("tuning");
   let tuning = e_tuning.options[e_tuning.selectedIndex].value;
@@ -89,6 +90,30 @@ function drawFretboard() {
   let field_chord = document.getElementById("chorddiv");
   let field_scale = document.getElementById("scalediv");
   let field_interval = document.getElementById("intdiv");
+
+  let low_key = document.getElementById("low_limit");
+  let low_index = low_key.selectedIndex;
+  let low_limit = low_key.options[low_key.selectedIndex].value;
+  let low_text = low_key.options[low_key.selectedIndex].innerHTML;
+
+  let high_key = document.getElementById("high_limit");
+  let high_index = high_key.selectedIndex;
+  let high_limit = high_key.options[high_key.selectedIndex].value;
+  let high_text = high_key.options[high_key.selectedIndex].innerHTML;
+
+  let skips = Array(6).fill(0);
+  let sk2 = document.getElementsByClassName("skip");
+
+  for ( let sk in sk2) {
+    if ( sk >= 0 ){
+      let skip = sk2[sk];
+      let id = skip.getAttribute("id");
+      let name = skip.getAttribute("name"); 
+      let sel = skip.checked;
+      skips[sk] = sel ;
+    }
+  }
+  skips = skips.reverse();
 
   field_chord.classList.remove("hide");
   field_scale.classList.remove("hide");
@@ -111,18 +136,27 @@ function drawFretboard() {
     scale = e_scale.options[e_scale.selectedIndex].value;
     sname = e_scale.options[e_scale.selectedIndex].innerHTML;
     notes = scale.split(/ /);
-    title = ['Scale:', sname, 'Key:', keyname, 'Tuning:', tname].join(' ');
+    title = ['Scale:', sname, "<br>", 'Key:', keyname,"<br>", 'Tuning:', tname].join(' ');
   } else if (show === 'chord') {
     field_scale.classList.add("hide");
     field_interval.classList.add("hide");
     chord = e_chord.options[e_chord.selectedIndex].value;
     cname = e_chord.options[e_chord.selectedIndex].innerHTML;
     notes = chord.split(/ /);
-    title = ['Chord:', cname, 'Key:', keyname, 'Tuning:', tname].join(' ');
+    title = ['Chord:', cname, "<br>",'Key:', keyname, "<br>",'Tuning:', tname].join(' ');
   } else if (show === 'interval') {
     field_chord.classList.add("hide");
     field_scale.classList.add("hide");
-    // handle intervals
+    let intervals = document.getElementsByClassName("intervals");
+    let indexes = Array(12).fill(1).map((x,i )=> i );
+    console.log(indexes.join(' '))
+    for ( let i in Array(12).fill(1).map((x,y )=> y )) {
+      let interval = intervals[i];
+      if ( interval.checked ) {
+        notes.push(interval.value);
+      }
+    }
+    title = "Intervals";
   } else {
     field_chord.classList.remove("hide");
     field_scale.classList.remove("hide");
@@ -137,28 +171,28 @@ function drawFretboard() {
   notes_list.innerHTML = '';
   for (let n in notes) {
     let degree = parseInt(notes[n]) % 12;
-    let keyint = code2num[key];
-    let num = (keyint + degree) % 12;
+    let num = (keynum + degree) % 12;
     let code = num2code[num];
     let note = code2note[code];
     let elem = document.createElement("div");
       elem.innerText = note;
       elem.classList.add('degree', 'degree'+degree );
     notes_list.appendChild(elem);
-
   }
 
-  let notess = notes.join(" ");
   for (let s = 0; s < 6; s++) {
+    let notess = notes.join(" ");
     let t = 5 - s;
-    drawString(t, tuning.substr(s, 1), parseInt(key), notess);
+    if ( skips[s]) { notess = "" }
+    drawString(t, tuning.substr(s, 1), keynum, notess, high_limit,low_limit);
   }
 }
 
-function drawString(s, open, key, notes) {
+function drawString(s, open, key, notes, high_limit, low_limit ) {
   let notes_arr = notes.split(' ');
   let notes_obj = {};
   let scale_obj = {};
+ 
   for (let n in notes_arr) {
     let degree = parseInt(notes_arr[n]) % 12;
     let num = (key + parseInt(notes_arr[n])) % 12;
@@ -179,12 +213,17 @@ function drawString(s, open, key, notes) {
     let degreename = 'degree' + degree;
     let elem = document.getElementById(id);
 
+    let go =1;
+    if ( i > high_limit || i <= low_limit ) {
+      go = 0;
+    }
+ 
     for (let c in classes) {
       let clas = classes[c];
       elem.classList.remove(clas);
     }
 
-    if (notes_obj[num]) {
+    if (notes_obj[num] && go) {
       elem.classList.add(degreename);
     } else {
       elem.classList.add('hide');
